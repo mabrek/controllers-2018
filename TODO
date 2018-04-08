@@ -13,3 +13,26 @@ http://apmonitor.com/do/index.php/Main/HomePage
 https://www.quora.com/What-are-pros-and-cons-of-using-fuzzy-logic-controller-vs-PID-controller-for-models-such-as-a-spring-mass-damper-system
 
 http://scriptedonachip.com/Optimal-Controllers-MPC
+
+
+https://en.wikipedia.org/wiki/Self-oscillation
+
+
+motivation - oscillations in real world feedback systems
+
+https://smbc-comics.com/index.php?db=comics&id=2088#comic
+
+simple tank heating problem
+
+pid controller intro
+
+links to arima
+
+discrete control, hysteresis
+
+
+
+
+books:
+intro Feedback Control for Computer Systems
+advanced Asynchronous Control for Networked Systems
