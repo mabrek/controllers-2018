@@ -43,7 +43,7 @@ links to arima
 
 discrete control, hysteresis
 
-
+D part of PID explodes on step change of setpoint
 
 
 books:
