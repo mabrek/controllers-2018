@@ -56,6 +56,8 @@ D part of PID explodes on step change of setpoint
 
 
 books:
-intro Feedback Control for Computer Systems
-advanced Asynchronous Control for Networked Systems
-Modeling and Simulation in Python
+intro
+    Modeling and Simulation in Python
+    Feedback Control for Computer Systems
+advanced
+    Asynchronous Control for Networked Systems
