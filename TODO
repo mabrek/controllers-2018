@@ -31,6 +31,8 @@ google "inkscape block diagram"
 https://www.youtube.com/watch?v=G5LI695MiLY
 Dia
 
+https://medium.com/@mjspeck/presenting-code-using-jupyter-notebook-slides-a8a3c3b59d67
+https://nbconvert.readthedocs.io/en/latest/usage.html#convert-revealjs
 
 lorenz demo at http://jupyterlab.readthedocs.io/en/stable/
 https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Asynchronous.html
@@ -44,6 +46,8 @@ motivation - oscillations in real world feedback systems
 
 https://smbc-comics.com/index.php?db=comics&id=2088#comic
 
+load testing, measuring transfer function
+
 simple tank heating problem
 
 pid controller intro
@@ -52,7 +56,7 @@ links to arima
 
 discrete control, hysteresis
 
-D part of PID explodes on step change of setpoint
+D part of PID explodes on step change of setpoint (derivative kick)
 
 
 books:
