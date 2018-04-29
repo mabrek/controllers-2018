@@ -1,5 +1,3 @@
-https://www.cds.caltech.edu/~murray/courses/cds110/
-
 http://jakevdp.github.io/blog/2013/05/28/a-simple-animation-the-magic-triangle/
 
 doubleT test
@@ -52,16 +50,25 @@ simple tank heating problem
 
 pid controller intro
 
-links to arima
+links to arima through z-transform
 
 discrete control, hysteresis
 
 D part of PID explodes on step change of setpoint (derivative kick)
 
+PID tuning
+    zoller ...
+    FOPDT?
+
+applications
+    load balancers
+    flow control
 
 books:
 intro
     Modeling and Simulation in Python
     Feedback Control for Computer Systems
+medium
+    William S. Levine-The Control Handbook, Second Edition_ Control System Fundamentals, Second Edition (Electrical Engineering Handbook)-CRC Press (2010)
 advanced
     Asynchronous Control for Networked Systems
