@@ -57,12 +57,21 @@ discrete control, hysteresis
 D part of PID explodes on step change of setpoint (derivative kick)
 
 PID tuning
-    zoller ...
+    Ziegler–Nichols
     FOPDT?
 
 applications
     load balancers
     flow control
+
+stability, delays
+
+predator-prey system
+https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations
+https://www.tandfonline.com/doi/full/10.1080/17513758.2016.1226435
+
+illustration
+https://en.wikipedia.org/wiki/Phase_portrait
 
 books:
 intro
