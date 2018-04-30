@@ -16,18 +16,15 @@ https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Asynchronous.html
 https://github.com/5agado/data-science-learning/blob/3c87c8518ec7861264575e0a859f6c3ce8003d81/cellular%20automata/Cellular%20Automata.ipynb
 
 
-https://en.wikipedia.org/wiki/Self-oscillation
-
-
 motivation - oscillations in real world feedback systems
-
-https://smbc-comics.com/index.php?db=comics&id=2088#comic
+https://en.wikipedia.org/wiki/Self-oscillation
 
 load testing, measuring transfer function
 
 simple tank heating problem
 add brownian noise to external temperature
 add impulse noise to setpoint and external temperature
+add square wave noise
 
 pid controller intro
 https://en.wikipedia.org/wiki/PID_controller
@@ -39,6 +36,8 @@ discrete control, hysteresis
 show effects of discretization
 
 D part of PID explodes on step change of setpoint (derivative kick)
+anti-windup part for I
+bang-bang degradation
 
 PID tuning
     Ziegler–Nichols
@@ -47,6 +46,7 @@ PID tuning
 applications
     load balancers
     flow control
+    autoscaling
 
 stability, delays
 
@@ -66,3 +66,16 @@ medium
     Feedback Systems: An Introduction for Scientists and Engineers Karl J. Åström and Richard M. Murray http://www.cds.caltech.edu/~murray/amwiki/index.php?title=Main_Page
 advanced
     Asynchronous Control for Networked Systems
+
+
+процесс
+12. Дробленый солод смешивают с горячей водой температурой около 52 °С в заторном аппарате 13а. После тщательного перемешивания (затирания) часть затора (смесь солода с водой) насосом 14 перека­чивают в другой заторный аппарат 136, где нагревают до температу­ры 68 – 70 °С
+
+
+котел (mash tun)
+https://www.beermachines.ru/catalog/electric-brewing-systems/ibrew/ibrew-50-auto/
+50л
+3000Вт
+шаг 100Вт
+
+50C -> 75C
