@@ -7,8 +7,6 @@ part4_PI_control.py
 
 https://www.gribblelab.org/compneuro/2_Modelling_Dynamical_Systems.html
 
-http://physicalmodelingwithpython.blogspot.ru/p/code-samples.html#parametric_oscillator
-
 google "inkscape block diagram"
 https://www.youtube.com/watch?v=G5LI695MiLY
 Dia
@@ -31,6 +29,8 @@ https://smbc-comics.com/index.php?db=comics&id=2088#comic
 load testing, measuring transfer function
 
 simple tank heating problem
+add brownian noise to external temperature
+add impulse noise to setpoint and external temperature
 
 pid controller intro
 https://en.wikipedia.org/wiki/PID_controller
