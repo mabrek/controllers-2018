@@ -26,6 +26,8 @@ add brownian noise to external temperature
 add impulse noise to setpoint and external temperature
 add square wave noise
 
+python code instead of mathjax
+
 pid controller intro
 https://en.wikipedia.org/wiki/PID_controller
 
