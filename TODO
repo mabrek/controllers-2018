@@ -85,3 +85,10 @@ https://www.beermachines.ru/catalog/electric-brewing-systems/ibrew/ibrew-50-auto
 шаг 100Вт
 
 50C -> 75C
+
+
+colors
+
+'tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan'
+
+'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w'
