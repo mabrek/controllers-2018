@@ -1,5 +1,8 @@
 http://tiao.io/posts/notebooks/embedding-matplotlib-animations-in-jupyter-as-interactive-javascript-widgets/
 
+change limits on the fly
+https://matplotlib.org/examples/animation/animate_decay.html
+
 
 https://www.youtube.com/watch?v=tSOMSxGLzQo
 part4_PI_control.py
