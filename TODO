@@ -1,4 +1,4 @@
-http://jakevdp.github.io/blog/2013/05/28/a-simple-animation-the-magic-triangle/
+http://tiao.io/posts/notebooks/embedding-matplotlib-animations-in-jupyter-as-interactive-javascript-widgets/
 
 
 https://www.youtube.com/watch?v=tSOMSxGLzQo
@@ -40,6 +40,9 @@ show effects of discretization
 D part of PID explodes on step change of setpoint (derivative kick)
 anti-windup part for I
 bang-bang degradation
+stability, delays
+
+implement delay as power[i + d] = control output, initialize power by initial value
 
 PID tuning
     Ziegler–Nichols
@@ -49,8 +52,6 @@ applications
     load balancers
     flow control
     autoscaling
-
-stability, delays
 
 predator-prey system
 https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations
