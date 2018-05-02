@@ -23,9 +23,9 @@ https://en.wikipedia.org/wiki/Self-oscillation
 load testing, measuring transfer function
 
 simple tank heating problem
-add brownian noise to external temperature
 add impulse noise to setpoint and external temperature
 add square wave noise
+add white noise to measured temperature
 
 python code instead of mathjax
 
