@@ -1,21 +1,4 @@
-change limits on the fly
-https://matplotlib.org/examples/animation/animate_decay.html
-
-
-https://www.youtube.com/watch?v=tSOMSxGLzQo
-part4_PI_control.py
-
-
-https://www.gribblelab.org/compneuro/2_Modelling_Dynamical_Systems.html
-
-google "inkscape block diagram"
-https://www.youtube.com/watch?v=G5LI695MiLY
 Dia
-
-lorenz demo at http://jupyterlab.readthedocs.io/en/stable/
-https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Asynchronous.html
-https://github.com/5agado/data-science-learning/blob/3c87c8518ec7861264575e0a859f6c3ce8003d81/cellular%20automata/Cellular%20Automata.ipynb
-
 
 motivation - oscillations in real world feedback systems
 https://en.wikipedia.org/wiki/Self-oscillation
@@ -46,19 +29,14 @@ anti-windup part for I
 bang-bang degradation
 stability, delays
 
-implement delay as power[i + d] = control output, initialize power by initial value
-
 PID tuning
     Ziegler–Nichols
     relay feedback
 
 applications
     load balancers
-    flow control
     autoscaling
-
-illustration
-https://en.wikipedia.org/wiki/Phase_portrait
+    flow control
 
 books:
 intro
@@ -70,9 +48,9 @@ medium
 advanced
     Asynchronous Control for Networked Systems
 
+links
+https://www.gribblelab.org/compneuro/2_Modelling_Dynamical_Systems.html
 
-процесс
-12. Дробленый солод смешивают с горячей водой температурой около 52 °С в заторном аппарате 13а. После тщательного перемешивания (затирания) часть затора (смесь солода с водой) насосом 14 перека­чивают в другой заторный аппарат 136, где нагревают до температу­ры 68 – 70 °С
 
 
 котел (mash tun)
@@ -85,7 +63,4 @@ https://www.beermachines.ru/catalog/electric-brewing-systems/ibrew/ibrew-50-auto
 
 
 colors
-
-'tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan'
-
 'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w'
