@@ -30,6 +30,7 @@ PID tuning
     relay feedback
 
 parameter tuning animation
+fixed limits on axes
 
 applications
     load balancers
