@@ -1,49 +1,81 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>PID controller introduction</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white-helv.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/github-gist.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>PID controller introduction</h1>
+                    <p>
+                        &copy; 2018 Anton Lebedevich
+                    </p>
+                </section>
+                <section>
+                    <h2>Motivation</h2>
+                    <img class="stretch" src="img-static/request-rate-restart.png"/>
+                </section>
+                <section>
+                    <h2>Meet Mash Tun</h2>
+                    <img class="stretch" src="img-static/mash-tun.jpg"/>
+                    <p><a href="https://www.beermachines.ru/catalog/electric-brewing-systems/ibrew/ibrew-50-auto/">Ibrew-50-Auto</a></p>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/Heat Cool.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/Heat Cool.png"/>
+                </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+                
+            </div>
+        </div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+                slideNumber: 'c/t',
+                transition: 'none',
+                width: 1900,
+                height: 980,
+                dependencies: [
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>
