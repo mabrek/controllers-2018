@@ -1,12 +1,6 @@
-motivation - oscillations in real world feedback systems
-https://en.wikipedia.org/wiki/Self-oscillation
-
 load testing, measuring transfer function
 
-simple tank heating problem
-add white noise to measured temperature
-
-python code instead of mathjax
+code font size
 
 pid controller intro
 https://en.wikipedia.org/wiki/PID_controller
@@ -32,34 +26,8 @@ PID tuning
 parameter tuning animation
 fixed limits on axes
 
-applications
-    load balancers
-    autoscaling
-    flow control
-
-books:
-intro
-    Modeling and Simulation in Python http://greenteapress.com/wp/modsimpy/
-    Feedback Control for Computer Systems
-medium
-    William S. Levine-The Control Handbook, Second Edition_ Control System Fundamentals, Second Edition (Electrical Engineering Handbook)-CRC Press (2010)
-    Feedback Systems: An Introduction for Scientists and Engineers Karl J. Åström and Richard M. Murray http://www.cds.caltech.edu/~murray/amwiki/index.php?title=Main_Page
-advanced
-    Asynchronous Control for Networked Systems
-
 links
 https://www.gribblelab.org/compneuro/2_Modelling_Dynamical_Systems.html
-
-
-
-котел (mash tun)
-https://www.beermachines.ru/catalog/electric-brewing-systems/ibrew/ibrew-50-auto/
-50л
-3000Вт
-шаг 100Вт
-
-50C -> 75C
-
 
 colors
 'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w'

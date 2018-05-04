@@ -30,15 +30,39 @@
                         &copy; 2018 Anton Lebedevich
                     </p>
                 </section>
+                
                 <section>
                     <h2>Motivation</h2>
                     <img class="stretch" src="img-static/request-rate-restart.png"/>
                 </section>
+                
                 <section>
-                    <h2>Meet Mash Tun</h2>
+                    <h2>It could happen to you</h2>
+                    <p><a href="https://en.wikipedia.org/wiki/Self-oscillation">wikipedia.org/wiki/Self-oscillation</a></p>
+                    <ul>
+                        <li>load balancers</li>
+                        <li>autoscaling</li>
+                        <li>flow control</li>
+                        <li>&hellip;</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Mash Tun</h2>
                     <img class="stretch" src="img-static/mash-tun.jpg"/>
                     <p><a href="https://www.beermachines.ru/catalog/electric-brewing-systems/ibrew/ibrew-50-auto/">Ibrew-50-Auto</a></p>
                 </section>
+                
+                <section>
+                    <h2>Mash Tun</h2>
+                    <ul>
+                        <li>50l</li>
+                        <li>3000W</li>
+                        <li>100W step regulation</li>
+                        <li>digital thermometer</li>
+                    </ul>
+                </section>
+                
                 <section>
                     <img class="stretch" src="img-generated/Heat Cool.gif"/>
                 </section>
@@ -47,12 +71,171 @@
                 </section>
 
                 <section>
+                    <h2>Relay Controller</h2>
+                    <pre><code class="Python" data-trim>
+if temperature[i] < setpoint[i]:
+    power[i+1] = max_power
+else:
+    power[i+1] = 0
+                    </code></pre>
+                </section>
+                
+                <section>
+                    <img class="stretch" src="img-generated/Relay Controller.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/Relay Controller.png"/>
+                </section>
+                
+                <section>
+                    <img class="stretch" src="img-generated/Relay Controller with Delay.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/Relay Controller with Delay.png"/>
+                </section>
+                
+                <section>
+                    <img class="stretch" src="img-generated/High Power Slow Relay.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/High Power Slow Relay.png"/>
+                </section>
+
+                <section>
+                    <h2>meet P from PID</h2>
+                    <pre><code class="Python" data-trim>
+error[i] = temperature[i] - setpoint[i]
+next_power = - proportional * error[i]
+                    </code></pre>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/low P from PID.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/low P from PID.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/medium P from PID.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/medium P from PID.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/high P from PID.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/high P from PID.png"/>
+                </section>
+
+                <section>
+                    <h2>Clip Power Range</h2>
+                    <pre><code class="Python" data-trim>
+error[i] = temperature[i] - setpoint[i]
+next_power = - proportional * error[i]
+if next_power > max_power:
+    next_power = max_power
+elif next_power < 0:
+    next_power = 0
+                    </code></pre>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/medium P with limits.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/medium P with limits.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/high P with limits.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/high P with limits.png"/>
+                </section>
+
+
+                <section>
                     <img class="stretch" src="img-generated/.gif"/>
                 </section>
                 <section>
                     <img class="stretch" src="img-generated/.png"/>
                 </section>
-                
+
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                <section>
+                    <h2>Books to read</h2>
+                    <h3>intro:</h3>
+                    <ul>
+                        <li>Modeling and Simulation in Python http://greenteapress.com/wp/modsimpy/</li>
+                        <li>Feedback Control for Computer Systems</li>
+                    </ul>
+                    <h3>medium:</h3>
+                    <ul>
+                        <li>William S. Levine-The Control Handbook, Second Edition_ Control System Fundamentals, Second Edition (Electrical Engineering Handbook)-CRC Press (2010)</li>
+                        <li>Feedback Systems: An Introduction for Scientists and Engineers Karl J. Åström and Richard M. Murray http://www.cds.caltech.edu/~murray/amwiki/index.php?title=Main_Page</li>
+                    </ul>
+                    <h3>advanced:</h3>
+                    Asynchronous Control for Networked Systems
+                </section>
+                <section>
+                    <h2>Q&amp;A</h2>
+                    <p>
+                    <p>Anton Lebedevich</p>
+                    <p>mabrek@gmail.com</p>
+                    <p><img src="img-static/Twitter_Logo_Blue.svg" height="25" width="25" style="margin: 0px 0px;"/><a href="https://twitter.com/widdoc">@widdoc</a></p>
+                    <p><a href="http://mabrek.github.io">mabrek.github.io</a></p>
+                </section>
             </div>
         </div>
 
