@@ -62,6 +62,14 @@
                         <li>digital thermometer</li>
                     </ul>
                 </section>
+                <section>
+                    <h2>Simplified Physical Model</h2>
+                    <pre><code class="Python" data-trim>
+temperature_derivative = (power - heat_transfer_coefficient * surface * (temperature - external_temperature)) \
+                            / heat_capacity
+                    </code></pre>
+                    <p><a href="https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling">wikipedia.org/wiki/Newton's_law_of_cooling</a></p>
+                </section>
                 
                 <section>
                     <img class="stretch" src="img-generated/Heat Cool.gif"/>
@@ -100,6 +108,7 @@ else:
                 <section>
                     <img class="stretch" src="img-generated/High Power Slow Relay.png"/>
                 </section>
+                
 
                 <section>
                     <h2>meet P from PID</h2>
@@ -158,11 +167,10 @@ elif next_power < 0:
 
 
                 <section>
-                    <img class="stretch" src="img-generated/.gif"/>
+                    <h2><a href="https://en.wikipedia.org/wiki/PID_controller"> wikipedia.org/wiki/PID_controller</a></h2>
+                    <img class="stretch" src="img-static/PID_en.svg"/>
                 </section>
-                <section>
-                    <img class="stretch" src="img-generated/.png"/>
-                </section>
+
 
                 <section>
                     <img class="stretch" src="img-generated/.gif"/>
@@ -206,6 +214,14 @@ elif next_power < 0:
                     <img class="stretch" src="img-generated/.png"/>
                 </section>
 
+                <section>
+                    <img class="stretch" src="img-generated/.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/.png"/>
+                </section>
+
+                
                 <section>
                     <img class="stretch" src="img-generated/.gif"/>
                 </section>

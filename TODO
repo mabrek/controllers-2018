@@ -1,12 +1,7 @@
 load testing, measuring transfer function
 
 code font size
-
-pid controller intro
-https://en.wikipedia.org/wiki/PID_controller
-
-http://commons.wikimedia.org/wiki/File:PID.svg
-Author 	Arturo Urquizo
+paragraph alignment
 
 links to arima through z-transform
 
@@ -14,8 +9,6 @@ discrete control, hysteresis
 
 show effects of discretization
 
-D part of PID explodes on step change of setpoint (derivative kick)
-anti-windup part for I
 bang-bang degradation
 stability, delays
 
