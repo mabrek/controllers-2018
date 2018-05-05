@@ -6,13 +6,6 @@ highlight code parts
 bang-bang degradation
 stability, delays
 
-PID tuning
-    Ziegler–Nichols
-    relay feedback
-
-parameter tuning animation
-fixed limits on axes
-
 phase portrait from parameter change animation
 changing colors from 3d random walk
 
