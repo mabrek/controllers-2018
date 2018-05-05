@@ -1,13 +1,7 @@
-load testing, measuring transfer function
-
 code font size
 paragraph alignment
 
-links to arima through z-transform
-
-discrete control, hysteresis
-
-show effects of discretization
+highlight code parts
 
 bang-bang degradation
 stability, delays
