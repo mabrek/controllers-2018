@@ -43,6 +43,7 @@
                         <li>load balancers</li>
                         <li>autoscaling</li>
                         <li>flow control</li>
+                        <li>load testing</li>
                         <li>&hellip;</li>
                     </ul>
                 </section>
@@ -167,39 +168,136 @@ elif next_power < 0:
 
 
                 <section>
+                    <h2>Add Integral Part (I from PID)</h2>
+                    <pre><code class="Python" data-trim>
+error[i] = temperature[i] - setpoint[i]
+time_diff = time[i + 1] - time[i]
+integral_error[i] = integral_error[i-1] + error[i] * time_diff
+next_power = - proportional * error[i] - integral * integral_error[i]
+if next_power > max_power:
+    next_power = max_power
+elif next_power < 0:
+    next_power = 0
+                    </code></pre>
+                </section>
+
+
+                <section>
+                    <img class="stretch" src="img-generated/PI from PID.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/PI from PID.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/PI cooling.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/PI cooling.png"/>
+                </section>
+
+                <section>
+                    <h2>Integral Windup Protection</h2>
+                    <pre><code class="Python" data-trim>
+error[i] = temperature[i] - setpoint[i]
+time_diff = time[i + 1] - time[i]
+integral_error[i] = integral_error[i-1] + error[i] * time_diff
+next_power = - proportional * error[i] - integral * integral_error[i]
+if next_power > max_power:
+    next_power = max_power
+    integral_error[i] = integral_error[i-1]
+elif next_power < 0:
+    next_power = 0
+    integral_error[i] = integral_error[i-1]
+                    </code></pre>
+                </section>
+                
+                <section>
+                    <img class="stretch" src="img-generated/PI Anti Windup.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/PI Anti Windup.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/PI External Change.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/PI External Change.png"/>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/PI Unlimited.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/PI Unlimited.png"/>
+                </section>
+
+                <section>
+                    <h2>Derivative (D from PID)</h2>
+                    <pre><code class="Python" data-trim>
+error[i] = temperature[i] - setpoint[i]
+time_diff = time[i + 1] - time[i]
+integral_error[i] = integral_error[i-1] + error[i] * time_diff
+derivative_error[i] = (error[i] - error[i - 1]) / time_diff
+next_power = - proportional * error[i] - integral * integral_error[i] - derivative * derivative_error[i]
+                    </code></pre>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/Derivative Kick.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/Derivative Kick.png"/>
+                </section>
+
+                <section>
+                    <h2>Process Variable Derivative</h2>
+                    <pre><code class="Python" data-trim>
+error[i] = temperature[i] - setpoint[i]
+time_diff = time[i + 1] - time[i]
+integral_error[i] = integral_error[i-1] + error[i] * time_diff
+derivative_error[i] = (temperature[i] - temperature[i - 1]) / time_diff
+next_power = - proportional * error[i] - integral * integral_error[i] - derivative * derivative_error[i]
+                    </code></pre>
+                </section>
+
+                <section>
+                    <img class="stretch" src="img-generated/Derivative Process.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/Derivative Process.png"/>
+                </section>
+
+                <section>
+                    <h2>Complete PID</h2>
+                    <pre><code class="Python" data-trim>
+error[i] = temperature[i] - setpoint[i]
+time_diff = time[i + 1] - time[i]
+integral_error[i] = integral_error[i-1] + error[i] * time_diff
+derivative_error[i] = (temperature[i] - temperature[i - 1]) / time_diff
+next_power = - proportional * error[i] - integral * integral_error[i] - derivative * derivative_error[i]
+if next_power > max_power:
+    next_power = max_power
+    integral_error[i] = integral_error[i-1]
+elif next_power < 0:
+    next_power = 0
+    integral_error[i] = integral_error[i-1]
+                    </code></pre>
+                </section>
+                
+                <section>
+                    <img class="stretch" src="img-generated/Complete PID.gif"/>
+                </section>
+                <section>
+                    <img class="stretch" src="img-generated/Complete PID.png"/>
+                </section>
+
+                <section>
                     <h2><a href="https://en.wikipedia.org/wiki/PID_controller"> wikipedia.org/wiki/PID_controller</a></h2>
                     <img class="stretch" src="img-static/PID_en.svg"/>
                 </section>
-
-
-                <section>
-                    <img class="stretch" src="img-generated/.gif"/>
-                </section>
-                <section>
-                    <img class="stretch" src="img-generated/.png"/>
-                </section>
-
-                <section>
-                    <img class="stretch" src="img-generated/.gif"/>
-                </section>
-                <section>
-                    <img class="stretch" src="img-generated/.png"/>
-                </section>
-
-                <section>
-                    <img class="stretch" src="img-generated/.gif"/>
-                </section>
-                <section>
-                    <img class="stretch" src="img-generated/.png"/>
-                </section>
-
-                <section>
-                    <img class="stretch" src="img-generated/.gif"/>
-                </section>
-                <section>
-                    <img class="stretch" src="img-generated/.png"/>
-                </section>
-
+                
                 <section>
                     <img class="stretch" src="img-generated/.gif"/>
                 </section>
