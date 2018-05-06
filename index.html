@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/theme/white.css">
 
         <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="lib/css/github.css">
+        <link rel="stylesheet" href="lib/css/xcode.css">
 
         <!-- Printing and PDF exports -->
         <script>
@@ -66,8 +66,11 @@
                 <section>
                     <h2>Simplified Physical Model</h2>
                     <pre><code class="Python" data-trim>
-temperature_derivative = (power - heat_transfer_coefficient * surface * (temperature - external_temperature)) \
-                            / heat_capacity
+temperature_derivative = (
+    power
+    - heat_transfer_coefficient * surface
+      * (temperature - external_temperature)
+) / heat_capacity
                     </code></pre>
                     <p><a href="https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling">wikipedia.org/wiki/Newton's_law_of_cooling</a></p>
                 </section>
@@ -173,7 +176,8 @@ elif next_power < 0:
 error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
-next_power = - proportional * error[i] - integral * integral_error[i]
+next_power = - proportional * error[i]
+             - integral * integral_error[i]
 if next_power > max_power:
     next_power = max_power
 elif next_power < 0:
@@ -202,7 +206,8 @@ elif next_power < 0:
 error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
-next_power = - proportional * error[i] - integral * integral_error[i]
+next_power = - proportional * error[i]
+             - integral * integral_error[i]
 if next_power > max_power:
     next_power = max_power
     integral_error[i] = integral_error[i-1]
@@ -240,7 +245,9 @@ error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
 derivative_error[i] = (error[i] - error[i - 1]) / time_diff
-next_power = - proportional * error[i] - integral * integral_error[i] - derivative * derivative_error[i]
+next_power = - proportional * error[i] \
+             - integral * integral_error[i] \
+             - derivative * derivative_error[i]
                     </code></pre>
                 </section>
 
@@ -257,8 +264,12 @@ next_power = - proportional * error[i] - integral * integral_error[i] - derivati
 error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
-derivative_error[i] = (temperature[i] - temperature[i - 1]) / time_diff
-next_power = - proportional * error[i] - integral * integral_error[i] - derivative * derivative_error[i]
+derivative_error[i] = (
+    temperature[i] - temperature[i - 1]
+) / time_diff
+next_power = - proportional * error[i] \
+             - integral * integral_error[i] \
+             - derivative * derivative_error[i]
                     </code></pre>
                 </section>
 
@@ -275,8 +286,12 @@ next_power = - proportional * error[i] - integral * integral_error[i] - derivati
 error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
-derivative_error[i] = (temperature[i] - temperature[i - 1]) / time_diff
-next_power = - proportional * error[i] - integral * integral_error[i] - derivative * derivative_error[i]
+derivative_error[i] = (
+    temperature[i] - temperature[i - 1]
+) / time_diff
+next_power = - proportional * error[i] \
+             - integral * integral_error[i] \
+             - derivative * derivative_error[i]
 if next_power > max_power:
     next_power = max_power
     integral_error[i] = integral_error[i-1]
