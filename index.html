@@ -86,9 +86,9 @@ temperature_derivative = (
                     <h2>Relay Controller</h2>
                     <pre><code class="Python" data-trim>
 if temperature[i] < setpoint[i]:
-    power[i+1] = max_power
+    next_power = max_power
 else:
-    power[i+1] = 0
+    next_power = 0
                     </code></pre>
                 </section>
                 
@@ -115,7 +115,7 @@ else:
                 
 
                 <section>
-                    <h2>meet P from PID</h2>
+                    <h2>Meet P from PID</h2>
                     <pre><code class="Python" data-trim>
 error[i] = temperature[i] - setpoint[i]
 next_power = - proportional * error[i]
