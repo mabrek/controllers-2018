@@ -15,3 +15,6 @@ retune final pid
 lower resolution
 
 anti-windup same y-range as before
+
+https://github.com/apache/spark/blob/master/streaming/src/main/scala/org/apache/spark/streaming/scheduler/rate/PIDRateEstimator.scala
+https://issues.apache.org/jira/browse/SPARK-18371
