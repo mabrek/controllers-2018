@@ -26,3 +26,5 @@ increase full-screen image height
 
 https://github.com/apache/spark/blob/master/streaming/src/main/scala/org/apache/spark/streaming/scheduler/rate/PIDRateEstimator.scala
 https://issues.apache.org/jira/browse/SPARK-18371
+
+change <mark> background to green foreground
