@@ -155,13 +155,13 @@ next_power = - proportional * error[i]
 
                 <section>
                     <h2>Clip Power Range</h2>
-                    <pre><code class="Python" data-trim>
+                    <pre><code class="Python" data-trim data-noescape>
 error[i] = temperature[i] - setpoint[i]
 next_power = - proportional * error[i]
-if next_power > max_power:
+<span style="color: green">if next_power &gt; max_power:
     next_power = max_power
-elif next_power < 0:
-    next_power = 0
+elif next_power &lt; 0:
+    next_power = 0</span>
                     </code></pre>
                 </section>
 
