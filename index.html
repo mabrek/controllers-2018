@@ -158,10 +158,10 @@ next_power = - proportional * error[i]
                     <pre><code class="Python" data-trim data-noescape>
 error[i] = temperature[i] - setpoint[i]
 next_power = - proportional * error[i]
-<span style="color: green">if next_power &gt; max_power:
+<mark>if next_power &gt; max_power:
     next_power = max_power
 elif next_power &lt; 0:
-    next_power = 0</span>
+    next_power = 0</mark>
                     </code></pre>
                 </section>
 
