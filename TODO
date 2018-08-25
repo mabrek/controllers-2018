@@ -9,18 +9,11 @@ colors
 
 retune final pid
 
-lower resolution
-
 anti-windup same y-range as before
 
 heat-cool, relay: lower power y-range to push it down (get range from tuning graph)
 
 mark by color added code blocks
-
-external change: remove external temperature
-
-increase full-screen image height
-
 
 https://github.com/apache/spark/blob/master/streaming/src/main/scala/org/apache/spark/streaming/scheduler/rate/PIDRateEstimator.scala
 https://issues.apache.org/jira/browse/SPARK-18371
