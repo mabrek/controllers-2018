@@ -182,12 +182,12 @@ elif next_power &lt; 0:
 
                 <section>
                     <h2>Add Integral Part (I from PID)</h2>
-                    <pre><code class="Python" data-trim>
+                    <pre><code class="Python" data-trim data-noescape>
 error[i] = temperature[i] - setpoint[i]
-time_diff = time[i + 1] - time[i]
-integral_error[i] = integral_error[i-1] + error[i] * time_diff
+<mark>time_diff = time[i + 1] - time[i]
+integral_error[i] = integral_error[i-1] + error[i] * time_diff</mark>
 next_power = - proportional * error[i]
-             - integral * integral_error[i]
+             <mark>- integral * integral_error[i]</mark>
 if next_power > max_power:
     next_power = max_power
 elif next_power < 0:
@@ -212,7 +212,7 @@ elif next_power < 0:
 
                 <section>
                     <h2>Integral Windup Protection</h2>
-                    <pre><code class="Python" data-trim>
+                    <pre><code class="Python" data-trim data-noescape>
 error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
@@ -220,10 +220,10 @@ next_power = - proportional * error[i]
              - integral * integral_error[i]
 if next_power > max_power:
     next_power = max_power
-    integral_error[i] = integral_error[i-1]
+    <mark>integral_error[i] = integral_error[i-1]</mark>
 elif next_power < 0:
     next_power = 0
-    integral_error[i] = integral_error[i-1]
+    <mark>integral_error[i] = integral_error[i-1]</mark>
                     </code></pre>
                 </section>
                 
@@ -243,14 +243,14 @@ elif next_power < 0:
 
                 <section>
                     <h2>Derivative (D from PID)</h2>
-                    <pre><code class="Python" data-trim>
+                    <pre><code class="Python" data-trim data-noescape>
 error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
-derivative_error[i] = (error[i] - error[i - 1]) / time_diff
+<mark>derivative_error[i] = (error[i] - error[i - 1]) / time_diff</mark>
 next_power = - proportional * error[i] \
              - integral * integral_error[i] \
-             - derivative * derivative_error[i]
+             <mark>- derivative * derivative_error[i]</mark>
                     </code></pre>
                 </section>
 
@@ -263,13 +263,13 @@ next_power = - proportional * error[i] \
 
                 <section>
                     <h2>Process Variable Derivative</h2>
-                    <pre><code class="Python" data-trim>
+                    <pre><code class="Python" data-trim data-noescape>
 error[i] = temperature[i] - setpoint[i]
 time_diff = time[i + 1] - time[i]
 integral_error[i] = integral_error[i-1] + error[i] * time_diff
-derivative_error[i] = (
+<mark>derivative_error[i] = (
     temperature[i] - temperature[i - 1]
-) / time_diff
+) / time_diff</mark>
 next_power = - proportional * error[i] \
              - integral * integral_error[i] \
              - derivative * derivative_error[i]
