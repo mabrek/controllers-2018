@@ -7,14 +7,12 @@ https://www.gribblelab.org/compneuro/2_Modelling_Dynamical_Systems.html
 colors
 'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w'
 
-retune final pid
-
-anti-windup same y-range as before
-
-heat-cool, relay: lower power y-range to push it down (get range from tuning graph)
-
 mark by color added code blocks
 change <mark> background to green foreground
 
 https://github.com/apache/spark/blob/master/streaming/src/main/scala/org/apache/spark/streaming/scheduler/rate/PIDRateEstimator.scala
 https://issues.apache.org/jira/browse/SPARK-18371
+
+drop pi unlimited
+
+notebook link to the end
